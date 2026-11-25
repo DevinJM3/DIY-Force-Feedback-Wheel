@@ -1,0 +1,1538 @@
+{
+  "format": "solidcraft/68",
+  "name": "Wheel Shaft Extension",
+  "units": "mm",
+  "params": [
+    {
+      "name": "d1",
+      "expr": "83",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d2",
+      "expr": "59.5",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d3",
+      "expr": "55",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d4",
+      "expr": "58",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d8",
+      "expr": "62",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d9",
+      "expr": "60",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d10",
+      "expr": "6",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d11",
+      "expr": "3.75+3",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d13",
+      "expr": "7.5",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d14",
+      "expr": "2.5+(d13/2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d15",
+      "expr": "65.5",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d16",
+      "expr": "3",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d17",
+      "expr": "6.5",
+      "unit": "mm",
+      "model": true
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "Sketch1",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          },
+          {
+            "id": "c2.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          },
+          {
+            "id": "c3.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          },
+          {
+            "id": "c4.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.5,
+            "construction": false
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 2,
+            "r": 29.75,
+            "construction": false
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 3,
+            "r": 27.5,
+            "construction": false
+          },
+          {
+            "id": "c4",
+            "type": "circle",
+            "c": 4,
+            "r": 29.0,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "coincident",
+            "p": 0,
+            "q": 1
+          },
+          {
+            "id": "k2",
+            "type": "diameter",
+            "c": 0,
+            "value": 83.0,
+            "param": "d1"
+          },
+          {
+            "id": "k3",
+            "type": "coincident",
+            "p": 0,
+            "q": 2
+          },
+          {
+            "id": "k4",
+            "type": "diameter",
+            "c": 1,
+            "value": 59.5,
+            "param": "d2"
+          },
+          {
+            "id": "k5",
+            "type": "coincident",
+            "p": 0,
+            "q": 3
+          },
+          {
+            "id": "k6",
+            "type": "diameter",
+            "c": 2,
+            "value": 55.0,
+            "param": "d3"
+          },
+          {
+            "id": "k7",
+            "type": "coincident",
+            "p": 0,
+            "q": 4
+          },
+          {
+            "id": "k8",
+            "type": "diameter",
+            "c": 3,
+            "value": 58.0,
+            "param": "d4"
+          }
+        ],
+        "counters": {
+          "c": 4,
+          "k": 8
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Extrude1",
+      "suppressed": false,
+      "body_names": [
+        "Body1"
+      ],
+      "param_names": [
+        "d5"
+      ],
+      "type": "extrude",
+      "sketch": 1,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c1"
+          ],
+          [
+            "c4"
+          ],
+          [
+            "c2"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "6",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 3,
+      "name": "Extrude2",
+      "suppressed": false,
+      "param_names": [
+        "d6",
+        "d7"
+      ],
+      "type": "extrude",
+      "sketch": 1,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c1"
+          ],
+          [
+            "c4"
+          ],
+          [
+            "c2"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "-16.00 mm",
+        "convention": "total_distance",
+        "direction": "negative",
+        "start_offset": "79+6mm"
+      },
+      "operation": "join"
+    },
+    {
+      "id": 4,
+      "name": "Sketch2",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [-0.0, -0.0, 79.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, -1.0, 0.0]
+        },
+        "at": [-4.865436366842687, -30.257161545890128, 78.99999999999991],
+        "name": "F3:top#1",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 3,
+            "name": "F3:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 79.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": false,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "c3.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 2,
+            "r": 31.0,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "coincident",
+            "p": 0,
+            "q": 2
+          },
+          {
+            "id": "k2",
+            "type": "diameter",
+            "c": 2,
+            "value": 62.0,
+            "param": "d8"
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [36.77737623581149, -1.2429863909182501, 79.0]
+            },
+            "face_name": "F3:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F3:side:c1|F3:top#1",
+              "F3:side:c3|F3:top#1"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 3,
+          "j": 1,
+          "k": 2,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sketch3",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [0.0, 0.0, 6.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, 1.0, 0.0]
+        },
+        "at": [26.402786123777645, 20.476272226745664, 5.999999999999972],
+        "name": "F2:top",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 2,
+            "name": "F2:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 6.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": true,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "c3.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [0.0, -27.5],
+            "fixed": false
+          },
+          {
+            "id": "c4.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 2,
+            "r": 30.0,
+            "construction": false
+          },
+          {
+            "id": "c4",
+            "type": "circle",
+            "c": 4,
+            "r": 27.5,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "coincident",
+            "p": 0,
+            "q": 2
+          },
+          {
+            "id": "k2",
+            "type": "diameter",
+            "c": 2,
+            "value": 60.0,
+            "param": "d9"
+          },
+          {
+            "id": "k3",
+            "type": "point_on_curve",
+            "p": 3,
+            "c": 1
+          },
+          {
+            "id": "k4",
+            "type": "point_on_curve",
+            "p": 3,
+            "c": 3
+          },
+          {
+            "id": "k5",
+            "type": "coincident",
+            "p": 0,
+            "q": 4
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [36.77737623581149, 1.2429863909182455, 6.0]
+            },
+            "face_name": "F2:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F2:side:c1|F2:top",
+              "F2:side:c3|F2:top"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 4,
+          "j": 1,
+          "k": 5,
+          "p": 2
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Loft1",
+      "suppressed": false,
+      "type": "loft",
+      "sections": [
+        {
+          "sketch": 4,
+          "profiles": {
+            "type": "curves",
+            "loops": [
+              [
+                "c3"
+              ]
+            ]
+          }
+        },
+        {
+          "sketch": 5,
+          "profiles": {
+            "type": "curves",
+            "loops": [
+              [
+                "c3"
+              ]
+            ]
+          }
+        }
+      ],
+      "operation": "join",
+      "targets": [
+        "Body1"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sketch4",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [0.0, 0.0, -0.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, -1.0, 0.0]
+        },
+        "at": [2.579992739413553, -32.25721649446997, -1.1368683772161603e-13],
+        "name": "F2:start",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 2,
+            "name": "F2:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 0.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": false,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p2",
+            "pos": [-1.8142718664991574e-15, 41.49999999999929],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [-1.8142718664991574e-15, 34.74999999999929],
+            "fixed": false
+          },
+          {
+            "id": "c3.center",
+            "pos": [-1.8142718664991574e-15, 34.74999999999929],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [-30.094382781508624, 17.37499999999965],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [-30.094382781508628, -17.374999999999638],
+            "fixed": false
+          },
+          {
+            "id": "p5",
+            "pos": [-2.4413757605378077e-15, -34.74999999999929],
+            "fixed": false
+          },
+          {
+            "id": "p6",
+            "pos": [30.094382781508617, -17.37499999999966],
+            "fixed": false
+          },
+          {
+            "id": "p7",
+            "pos": [30.094382781508624, 17.37499999999965],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 4,
+            "r": 3.0,
+            "construction": false
+          },
+          {
+            "id": "c4",
+            "type": "circle",
+            "c": 5,
+            "r": 3.0,
+            "construction": false
+          },
+          {
+            "id": "c5",
+            "type": "circle",
+            "c": 6,
+            "r": 3.0,
+            "construction": false
+          },
+          {
+            "id": "c6",
+            "type": "circle",
+            "c": 7,
+            "r": 3.0,
+            "construction": false
+          },
+          {
+            "id": "c7",
+            "type": "circle",
+            "c": 8,
+            "r": 3.0,
+            "construction": false
+          },
+          {
+            "id": "c8",
+            "type": "circle",
+            "c": 9,
+            "r": 3.0,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "point_on_curve",
+            "p": 2,
+            "c": 0
+          },
+          {
+            "id": "k2",
+            "type": "vertical",
+            "l": 2
+          },
+          {
+            "id": "k3",
+            "type": "coincident",
+            "p": 3,
+            "q": 4
+          },
+          {
+            "id": "k4",
+            "type": "diameter",
+            "c": 3,
+            "value": 6.0,
+            "param": "d10"
+          },
+          {
+            "id": "k5",
+            "type": "length",
+            "l": 2,
+            "value": 6.75,
+            "param": "d11",
+            "text": [0.24999999999999972, -4.599999999999999]
+          },
+          {
+            "id": "k6",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 5,
+            "center": 0,
+            "angle": 1.0471975511965976,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k7",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 4
+          },
+          {
+            "id": "k8",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 6,
+            "center": 0,
+            "angle": 2.0943951023931953,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k9",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 5
+          },
+          {
+            "id": "k10",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 7,
+            "center": 0,
+            "angle": 3.141592653589793,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k11",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 6
+          },
+          {
+            "id": "k12",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 8,
+            "center": 0,
+            "angle": 4.1887902047863905,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k13",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 7
+          },
+          {
+            "id": "k14",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 9,
+            "center": 0,
+            "angle": 5.235987755982989,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k15",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 8
+          }
+        ],
+        "patterns": [
+          {
+            "id": "pat1",
+            "entities": [
+              "c3"
+            ],
+            "kind": {
+              "type": "circular",
+              "center": "origin",
+              "count": 6,
+              "angle": 360.0,
+              "alignment": "right",
+              "reversed": false
+            },
+            "count_expression": "6",
+            "instances": [
+              {
+                "index": [1, 0],
+                "curves": [
+                  "c4"
+                ],
+                "points": [
+                  [
+                    "c3.center",
+                    "p3"
+                  ]
+                ],
+                "constraints": [
+                  "k6",
+                  "k7"
+                ]
+              },
+              {
+                "index": [2, 0],
+                "curves": [
+                  "c5"
+                ],
+                "points": [
+                  [
+                    "c3.center",
+                    "p4"
+                  ]
+                ],
+                "constraints": [
+                  "k8",
+                  "k9"
+                ]
+              },
+              {
+                "index": [3, 0],
+                "curves": [
+                  "c6"
+                ],
+                "points": [
+                  [
+                    "c3.center",
+                    "p5"
+                  ]
+                ],
+                "constraints": [
+                  "k10",
+                  "k11"
+                ]
+              },
+              {
+                "index": [4, 0],
+                "curves": [
+                  "c7"
+                ],
+                "points": [
+                  [
+                    "c3.center",
+                    "p6"
+                  ]
+                ],
+                "constraints": [
+                  "k12",
+                  "k13"
+                ]
+              },
+              {
+                "index": [5, 0],
+                "curves": [
+                  "c8"
+                ],
+                "points": [
+                  [
+                    "c3.center",
+                    "p7"
+                  ]
+                ],
+                "constraints": [
+                  "k14",
+                  "k15"
+                ]
+              }
+            ],
+            "expressions": {
+              "angle": "360 deg"
+            }
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [36.77737623581149, 1.2429863909182453, 0.0]
+            },
+            "face_name": "F2:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F2:side:c1|F2:start",
+              "F2:side:c3|F2:start"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 8,
+          "j": 1,
+          "k": 15,
+          "l": 1,
+          "p": 7,
+          "pat": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Extrude3",
+      "suppressed": false,
+      "param_names": [
+        "d12"
+      ],
+      "face_names": [
+        "F2:top"
+      ],
+      "type": "extrude",
+      "sketch": 7,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c6"
+          ],
+          [
+            "c7"
+          ],
+          [
+            "c8"
+          ],
+          [
+            "c3"
+          ],
+          [
+            "c4"
+          ],
+          [
+            "c5"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "6 mm",
+        "convention": "total_distance",
+        "direction": "negative",
+        "to": [-13.816850433050604, 32.30142027426979, 6.000000000000028]
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 9,
+      "name": "Sketch5",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [0.0, 0.0, 101.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, 1.0, 0.0]
+        },
+        "at": [-3.1853885738135554, -30.9834815633913, 101.0],
+        "name": "F3:top#2",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 3,
+            "name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 101.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": true,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p2",
+            "pos": [-0.11359120950006688, 41.49984454270335],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [-0.11359120950110083, 35.249844543081096],
+            "fixed": false
+          },
+          {
+            "id": "c3.center",
+            "pos": [-0.11359120950168078, 35.24984454329298],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 4,
+            "r": 3.75,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "point_on_curve",
+            "p": 2,
+            "c": 0
+          },
+          {
+            "id": "k2",
+            "type": "vertical",
+            "l": 2
+          },
+          {
+            "id": "k3",
+            "type": "coincident",
+            "p": 3,
+            "q": 4
+          },
+          {
+            "id": "k4",
+            "type": "diameter",
+            "c": 3,
+            "value": 7.5,
+            "param": "d13",
+            "text": [-3.8857233960388573, -3.5]
+          },
+          {
+            "id": "k5",
+            "type": "length",
+            "l": 2,
+            "value": 6.25,
+            "param": "d14",
+            "text": [0.09992133031946045, -6.285723396038858]
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [36.77737623581149, 1.242986390918246, 101.0]
+            },
+            "face_name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F3:side:c1|F3:top#2",
+              "F2:side:c3|F3:top#2"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 3,
+          "j": 1,
+          "k": 5,
+          "l": 1,
+          "p": 2
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Sketch6",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [-0.0, -0.0, 85.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, -1.0, 0.0]
+        },
+        "at": [36.53455109561057, 0.21234237752024399, 85.00000000000003],
+        "name": "F3:top#1",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 3,
+            "name": "F3:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 85.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": false,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "c3.center",
+            "pos": [0.0, 0.0],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 31.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 2,
+            "r": 32.75,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "coincident",
+            "p": 0,
+            "q": 2
+          },
+          {
+            "id": "k2",
+            "type": "diameter",
+            "c": 2,
+            "value": 65.5,
+            "param": "d15"
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [37.94404290247815, 1.2429863909182501, 85.0]
+            },
+            "face_name": "F3:cap:low:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F3:side:c1|F3:top#1",
+              "F3:top#1|F6:side:c3"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 3,
+          "j": 1,
+          "k": 2,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Sketch7",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "flipped",
+        "base": {
+          "type": "origin",
+          "name": "XZ"
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [31.0, 85.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "l1.end",
+            "pos": [34.0, 85.0],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [30.0, 6.0],
+            "fixed": true,
+            "link": "j2"
+          },
+          {
+            "id": "l3.end",
+            "pos": [31.0, 78.5],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [30.917721518987342, 78.5],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [30.917721518987342, 82.48080312573182],
+            "fixed": false
+          },
+          {
+            "id": "a1.start",
+            "pos": [34.0, 85.0],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 1,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 1,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 5,
+            "construction": false
+          },
+          {
+            "id": "l5",
+            "type": "line",
+            "a": 5,
+            "b": 1,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 6,
+            "a": 7,
+            "b": 5,
+            "construction": false,
+            "reversed": true
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "horizontal",
+            "l": 0
+          },
+          {
+            "id": "k2",
+            "type": "length",
+            "l": 0,
+            "value": 3.0,
+            "param": "d16"
+          },
+          {
+            "id": "k3",
+            "type": "vertical",
+            "l": 2
+          },
+          {
+            "id": "k4",
+            "type": "length",
+            "l": 2,
+            "value": 6.5,
+            "param": "d17"
+          },
+          {
+            "id": "k5",
+            "type": "point_on_curve",
+            "p": 5,
+            "c": 1
+          },
+          {
+            "id": "k6",
+            "type": "horizontal",
+            "l": 3
+          },
+          {
+            "id": "k7",
+            "type": "tangent",
+            "a": 3,
+            "b": 5
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "vertex",
+              "body": "Body1",
+              "at": [31.0, 7.59281015471359e-15, 85.0]
+            },
+            "vertex_name": "F3:top#1|F6:side:c3"
+          },
+          {
+            "id": "j2",
+            "kind": "project",
+            "source": {
+              "type": "vertex",
+              "body": "Body1",
+              "at": [30.0, 5.3853543700105785e-15, 6.0]
+            },
+            "vertex_name": "F2:top|F6:side:c3"
+          }
+        ],
+        "counters": {
+          "a": 1,
+          "j": 2,
+          "k": 7,
+          "l": 5,
+          "p": 3
+        }
+      }
+    }
+  ],
+  "next_id": 13,
+  "reserved_body_names": [
+    "Body1"
+  ],
+  "next_component_color_index": 0,
+  "visibility": {
+    "hidden_bodies": [],
+    "hidden_occurrences": [],
+    "hidden_origin": [],
+    "hidden_sketches": [1, 4, 5],
+    "shown_sketches": []
+  }
+}
