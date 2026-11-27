@@ -3321,7 +3321,7 @@
       "name": "Extrude1",
       "suppressed": false,
       "body_names": [
-        "Body1"
+        "Center Wheel"
       ],
       "param_names": [
         "d5"
@@ -3333,9 +3333,51 @@
         "loops": [
           [
             "c2",
+            "l8",
+            "l31",
+            "c5",
+            "l31"
+          ],
+          [
+            "c2",
+            "c2",
             "l3",
             "c3",
-            "l3"
+            "l3",
+            "c2",
+            "c2",
+            "c2",
+            "l31",
+            "c5",
+            "l8",
+            "l8",
+            "c2",
+            "l5",
+            "c6",
+            "l5",
+            "c2",
+            "l7",
+            "l7",
+            "c7",
+            "l20",
+            "c2"
+          ],
+          [
+            "c2",
+            "l20",
+            "c7",
+            "l20",
+            "l7"
+          ],
+          [
+            "c7",
+            "l7",
+            "l20"
+          ],
+          [
+            "c5",
+            "l31",
+            "l8"
           ]
         ]
       },
@@ -3741,6 +3783,16 @@
             "id": "p92",
             "pos": [-155.28214996994404, 62.11954873602566],
             "fixed": false
+          },
+          {
+            "id": "l82.end",
+            "pos": [-124.95149471536871, 35.76862867460786],
+            "fixed": false
+          },
+          {
+            "id": "l83.end",
+            "pos": [-124.95149471536871, 32.06910130347889],
+            "fixed": false
           }
         ],
         "curves": [
@@ -3919,6 +3971,27 @@
             "type": "line",
             "a": 39,
             "b": 40,
+            "construction": false
+          },
+          {
+            "id": "l82",
+            "type": "line",
+            "a": 36,
+            "b": 43,
+            "construction": false
+          },
+          {
+            "id": "l83",
+            "type": "line",
+            "a": 43,
+            "b": 44,
+            "construction": false
+          },
+          {
+            "id": "l84",
+            "type": "line",
+            "a": 44,
+            "b": 37,
             "construction": false
           }
         ],
@@ -4203,12 +4276,29 @@
             "type": "coincident",
             "p": 42,
             "q": 40
+          },
+          {
+            "id": "k156",
+            "type": "parallel",
+            "a": 12,
+            "b": 24
+          },
+          {
+            "id": "k157",
+            "type": "vertical",
+            "l": 25
+          },
+          {
+            "id": "k158",
+            "type": "point_on_curve",
+            "p": 44,
+            "c": 0
           }
         ],
         "counters": {
           "a": 16,
-          "k": 155,
-          "l": 81,
+          "k": 158,
+          "l": 84,
           "p": 92
         },
         "view": {
@@ -4229,7 +4319,12 @@
         "type": "curves",
         "loops": [
           [
-            "l2",
+            "l54",
+            "l82",
+            "l83",
+            "l84"
+          ],
+          [
             "l4",
             "a1",
             "l5",
@@ -4238,7 +4333,7 @@
             "l10",
             "a2",
             "l8",
-            "l7"
+            "l54"
           ]
         ]
       },
@@ -4249,312 +4344,16 @@
       "angle": "360 deg",
       "operation": "join",
       "targets": [
-        "Body1"
+        "Center Wheel"
       ],
       "convention": "sketch_normal"
     },
     {
-      "id": 16,
-      "name": "Revolve3",
+      "id": 23,
+      "name": "Revolve2",
       "suppressed": false,
       "body_names": [
-        "Body3"
-      ],
-      "param_names": [
-        "d63"
-      ],
-      "type": "revolve",
-      "sketch": 7,
-      "profiles": {
-        "type": "curves",
-        "loops": [
-          [
-            "l3",
-            "l7",
-            "l8",
-            "l54",
-            "a14",
-            "l50",
-            "l17",
-            "a3",
-            "l14",
-            "l14",
-            "l62",
-            "a5",
-            "a5",
-            "l29",
-            "l13",
-            "l13"
-          ],
-          [
-            "l3",
-            "l4",
-            "l54",
-            "l8",
-            "l7"
-          ],
-          [
-            "l4",
-            "l13",
-            "l13",
-            "l29",
-            "a5",
-            "a9",
-            "l19",
-            "a8",
-            "l52",
-            "a15",
-            "l54"
-          ]
-        ]
-      },
-      "axis": {
-        "type": "world",
-        "axis": "Z"
-      },
-      "angle": "360 deg",
-      "operation": "new_body",
-      "convention": "sketch_normal"
-    },
-    {
-      "id": 17,
-      "name": "Extrude7",
-      "suppressed": false,
-      "param_names": [
-        "d64"
-      ],
-      "type": "extrude",
-      "sketch": 1,
-      "profiles": {
-        "type": "curves",
-        "loops": [
-          [
-            "c16",
-            "l84",
-            "c19",
-            "l83",
-            "c16"
-          ],
-          [
-            "l60",
-            "l61",
-            "a6",
-            "l64",
-            "a8",
-            "c20",
-            "a7",
-            "l63",
-            "a5",
-            "l62"
-          ],
-          [
-            "c16",
-            "c16",
-            "l83",
-            "c20",
-            "l84"
-          ],
-          [
-            "l18",
-            "l57",
-            "l58",
-            "l60",
-            "l59",
-            "l56",
-            "l18"
-          ],
-          [
-            "c2",
-            "l17",
-            "c12",
-            "c12",
-            "l28",
-            "c13",
-            "l17",
-            "l18",
-            "l19"
-          ],
-          [
-            "c2",
-            "l20",
-            "l18",
-            "l17",
-            "c13",
-            "l25",
-            "c12",
-            "c12",
-            "l17"
-          ],
-          [
-            "c2",
-            "c2",
-            "l3",
-            "c3",
-            "l3",
-            "c2",
-            "c2",
-            "c2",
-            "l31",
-            "c5",
-            "l8",
-            "l8",
-            "c2",
-            "l5",
-            "c6",
-            "l5",
-            "c2",
-            "l7",
-            "l7",
-            "c7",
-            "l20",
-            "c2"
-          ],
-          [
-            "c2",
-            "l20",
-            "c7",
-            "l20",
-            "l7"
-          ],
-          [
-            "c2",
-            "l5",
-            "c10",
-            "c10",
-            "l16",
-            "c11",
-            "l5",
-            "l6",
-            "l7"
-          ],
-          [
-            "c2",
-            "l8",
-            "l31",
-            "c5",
-            "l31"
-          ],
-          [
-            "c2",
-            "l29",
-            "c14",
-            "c14",
-            "l40",
-            "c15",
-            "l29",
-            "l30",
-            "l31"
-          ],
-          [
-            "c2",
-            "l32",
-            "l30",
-            "l29",
-            "c15",
-            "l37",
-            "c14",
-            "c14",
-            "l29"
-          ],
-          [
-            "l30",
-            "l68",
-            "l69",
-            "l71",
-            "l70",
-            "l67",
-            "l30"
-          ],
-          [
-            "l71",
-            "l72",
-            "a10",
-            "l75",
-            "a12",
-            "c20",
-            "a11",
-            "l74",
-            "a9",
-            "l73"
-          ],
-          [
-            "c16",
-            "c16",
-            "l86",
-            "c20",
-            "l87"
-          ],
-          [
-            "c16",
-            "l87",
-            "c19",
-            "l86",
-            "c16"
-          ],
-          [
-            "l45",
-            "l46",
-            "a2",
-            "l49",
-            "c18",
-            "c20",
-            "c17",
-            "l48",
-            "a1",
-            "l47"
-          ],
-          [
-            "c16",
-            "l79",
-            "c19",
-            "l78",
-            "c16"
-          ],
-          [
-            "c16",
-            "c16",
-            "l78",
-            "c20",
-            "l79"
-          ],
-          [
-            "c2",
-            "l8",
-            "l6",
-            "l5",
-            "c11",
-            "l13",
-            "c10",
-            "c10",
-            "l5"
-          ],
-          [
-            "l6",
-            "l42",
-            "l43",
-            "l45",
-            "l44",
-            "l41",
-            "l6"
-          ]
-        ]
-      },
-      "extent": {
-        "distance": "-80.00 mm",
-        "convention": "total_distance",
-        "direction": "negative"
-      },
-      "operation": "intersect",
-      "targets": [
-        "Body1"
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Revolve4",
-      "suppressed": false,
-      "body_names": [
-        "Body4"
+        "Body5"
       ],
       "param_names": [
         "d11"
@@ -4566,6 +4365,7 @@
         "loops": [
           [
             "l14",
+            "l79",
             "l62",
             "a5",
             "a9",
@@ -4593,12 +4393,12 @@
       "convention": "sketch_normal"
     },
     {
-      "id": 19,
-      "name": "Extrude8",
+      "id": 24,
+      "name": "Extrude3",
       "suppressed": false,
       "body_names": [
-        "Body4 (1)",
-        "Body4 (2)"
+        "Rubber Wheel",
+        "Body5 (2)"
       ],
       "param_names": [
         "d13"
@@ -4608,6 +4408,15 @@
       "profiles": {
         "type": "curves",
         "loops": [
+          [
+            "l30",
+            "l68",
+            "l69",
+            "l71",
+            "l70",
+            "l67",
+            "l30"
+          ],
           [
             "l71",
             "l72",
@@ -4622,48 +4431,26 @@
           ],
           [
             "c16",
-            "l87",
-            "c19",
-            "l86",
-            "c16"
-          ],
-          [
-            "c16",
             "c16",
             "l86",
             "c20",
             "l87"
           ],
           [
-            "l30",
-            "l68",
-            "l69",
-            "l71",
-            "l70",
-            "l67",
-            "l30"
+            "c16",
+            "l87",
+            "c19",
+            "l86",
+            "c16"
           ],
           [
-            "c2",
-            "l29",
-            "c14",
-            "c14",
-            "l40",
-            "c15",
-            "l29",
-            "l30",
-            "l31"
-          ],
-          [
-            "c2",
-            "l32",
-            "l30",
-            "l29",
-            "c15",
-            "l37",
-            "c14",
-            "c14",
-            "l29"
+            "l6",
+            "l42",
+            "l43",
+            "l45",
+            "l44",
+            "l41",
+            "l6"
           ],
           [
             "c2",
@@ -4688,13 +4475,11 @@
             "l7"
           ],
           [
-            "l6",
-            "l42",
-            "l43",
-            "l45",
-            "l44",
-            "l41",
-            "l6"
+            "c16",
+            "c16",
+            "l78",
+            "c20",
+            "l79"
           ],
           [
             "l45",
@@ -4710,17 +4495,54 @@
           ],
           [
             "c16",
-            "c16",
-            "l78",
-            "c20",
-            "l79"
-          ],
-          [
-            "c16",
             "l79",
             "c19",
             "l78",
             "c16"
+          ],
+          [
+            "c2",
+            "l32",
+            "l30",
+            "l29",
+            "c15",
+            "l37",
+            "c14",
+            "c14",
+            "l29"
+          ],
+          [
+            "c2",
+            "l29",
+            "c14",
+            "c14",
+            "l40",
+            "c15",
+            "l29",
+            "l30",
+            "l31"
+          ],
+          [
+            "c2",
+            "l20",
+            "l18",
+            "l17",
+            "c13",
+            "l25",
+            "c12",
+            "c12",
+            "l17"
+          ],
+          [
+            "c2",
+            "l17",
+            "c12",
+            "c12",
+            "l28",
+            "c13",
+            "l17",
+            "l18",
+            "l19"
           ],
           [
             "l60",
@@ -4756,6 +4578,53 @@
             "c19",
             "l83",
             "c16"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "-75.00 mm",
+        "convention": "total_distance",
+        "direction": "negative"
+      },
+      "operation": "intersect",
+      "targets": [
+        "Body5"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Extrude4",
+      "suppressed": false,
+      "param_names": [
+        "d15",
+        "d27"
+      ],
+      "type": "extrude",
+      "sketch": 1,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c2",
+            "l5",
+            "c10",
+            "c10",
+            "l16",
+            "c11",
+            "l5",
+            "l6",
+            "l7"
+          ],
+          [
+            "c2",
+            "l8",
+            "l6",
+            "l5",
+            "c11",
+            "l13",
+            "c10",
+            "c10",
+            "l5"
           ],
           [
             "c2",
@@ -4778,151 +4647,858 @@
             "l17",
             "l18",
             "l19"
-          ]
-        ]
-      },
-      "extent": {
-        "distance": "-72.00 mm",
-        "convention": "total_distance",
-        "direction": "negative"
-      },
-      "operation": "intersect",
-      "targets": [
-        "Body4"
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Combine1",
-      "suppressed": false,
-      "type": "combine",
-      "target": "Body4 (1)",
-      "tools": [
-        "Body4 (2)",
-        "Body2",
-        "Body4"
-      ],
-      "operation": "join",
-      "keep_tools": false
-    },
-    {
-      "id": 21,
-      "name": "Extrude9",
-      "suppressed": false,
-      "param_names": [
-        "d15"
-      ],
-      "face_names": [
-        "F2:top"
-      ],
-      "type": "extrude",
-      "sketch": 1,
-      "profiles": {
-        "type": "curves",
-        "loops": [
+          ],
           [
-            "c5",
+            "l18",
+            "l57",
+            "l58",
+            "l60",
+            "l59",
+            "l56",
+            "l18"
+          ],
+          [
+            "l30",
+            "l68",
+            "l69",
+            "l71",
+            "l70",
+            "l67",
+            "l30"
+          ],
+          [
+            "c2",
+            "l29",
+            "c14",
+            "c14",
+            "l40",
+            "c15",
+            "l29",
+            "l30",
+            "l31"
+          ],
+          [
+            "c2",
+            "l32",
+            "l30",
+            "l29",
+            "c15",
+            "l37",
+            "c14",
+            "c14",
+            "l29"
+          ],
+          [
+            "l6",
+            "l42",
+            "l43",
+            "l45",
+            "l44",
+            "l41",
+            "l6"
+          ],
+          [
+            "c2",
+            "c2",
+            "l3",
+            "c3",
+            "l3",
+            "c2",
+            "c2",
+            "c2",
             "l31",
-            "l8"
+            "c5",
+            "l8",
+            "l8",
+            "c2",
+            "l5",
+            "c6",
+            "l5",
+            "c2",
+            "l7",
+            "l7",
+            "c7",
+            "l20",
+            "c2"
+          ],
+          [
+            "c2",
+            "l8",
+            "l31",
+            "c5",
+            "l31"
+          ],
+          [
+            "c2",
+            "l20",
+            "c7",
+            "l20",
+            "l7"
           ],
           [
             "c7",
             "l7",
             "l20"
+          ],
+          [
+            "c5",
+            "l31",
+            "l8"
           ]
         ]
       },
       "extent": {
-        "distance": "3.75 mm",
+        "distance": "-42.00 mm",
         "convention": "total_distance",
-        "direction": "positive",
-        "to": [37.03173656961569, 7.144783259639809, 3.75]
+        "direction": "negative",
+        "taper": "0 deg"
       },
-      "operation": "join"
+      "operation": "intersect",
+      "targets": [
+        "Center Wheel"
+      ]
     },
     {
-      "id": 22,
-      "name": "Fillet2",
+      "id": 26,
+      "name": "Combine1",
       "suppressed": false,
-      "param_names": [
-        "d28"
+      "type": "combine",
+      "target": "Rubber Wheel",
+      "tools": [
+        "Body2",
+        "Body5",
+        "Body5 (2)"
       ],
-      "edge_refs": [
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        },
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        },
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        },
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        },
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        },
-        {
-          "dir": [0.0, 0.0, 1.0],
-          "min": [-121.0530584818667, -122.20812398151668, -7.105427357601002e-15],
-          "max": [121.05305848186673, 46.00927144124629, 34.23525901292239]
-        }
+      "operation": "join",
+      "keep_tools": false
+    },
+    {
+      "id": 27,
+      "name": "Combine2",
+      "suppressed": false,
+      "type": "combine",
+      "target": "Center Wheel",
+      "tools": [
+        "Rubber Wheel"
       ],
-      "edge_names": [
-        "F17:side:c2#[F17:side:l20,F17:side:l7]|F17:side:l20",
-        "F17:side:c2#[F17:side:l20,F17:side:l7]|F17:side:l7",
-        "F17:side:c2#[F17:side:l19,F17:side:l32]|F17:side:l19",
-        "F17:side:c2#[F17:side:l19,F17:side:l32]|F17:side:l32",
-        "F17:side:c2#[F17:side:l31,F17:side:l8]|F17:side:l31",
-        "F17:side:c2#[F17:side:l31,F17:side:l8]|F17:side:l8"
-      ],
-      "type": "fillet",
-      "edges": [
-        [39.702395148487454, -15.164755832962161, 1.875000000000001],
-        [24.923765309040398, -34.424641215557706, 1.8750000000000022],
-        [26.80090487319707, 32.98426136777721, 1.8749999999999978],
-        [-26.800904873197084, 32.98426136777722, 1.8749999999999967],
-        [-39.702395148487454, -15.16475583296215, 1.8750000000000009],
-        [-24.92376530904044, -34.42464121555768, 1.8750000000000018]
-      ],
-      "radius": "47.5",
-      "body": "Body1",
-      "turn": "auto"
+      "operation": "join",
+      "keep_tools": false
     }
   ],
-  "marker": 15,
-  "next_id": 23,
+  "next_id": 28,
   "reserved_body_names": [
     "Body1",
     "Body2",
     "Body3",
-    "Body4"
+    "Body4",
+    "Body5"
   ],
   "next_component_color_index": 0,
   "appearances": {
     "bodies": {
-      "Body1": {
-        "name": "Steel - Brushed",
-        "color": [160, 164, 170],
-        "opacity": 1.0
-      },
       "Body4 (1)": {
         "name": "Rubber - Black",
         "color": [26, 26, 26],
         "opacity": 1.0
+      },
+      "Center Wheel": {
+        "name": "Steel - Brushed",
+        "color": [160, 164, 170],
+        "opacity": 1.0
       }
-    }
+    },
+    "faces": [
+      {
+        "body": "Center Wheel",
+        "point": [14.941114031539065, -28.185556407737465, 3.75],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:top"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [14.197290252847324, -90.79232672492303, 13.033625560466135],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l4#[F25:side:c11,F25:side:l13,F25:side:l16,F25:side:l41,F25:side:l42,F25:side:l43,F25:side:l44,F25:side:l7,F25:side:l8]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [10.603009191501883, -73.98993277677344, 3.7539020535180043],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c10,F25:side:l16,F25:side:l7]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-13.306615495642632, -72.17343179655596, 3.179792658378801],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c10,F25:side:l13,F25:side:l8]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [4.992550246619771, -39.72177047255073, -5.684341886080802e-14],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l5"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [69.55863181507482, 7.939138607995268, 2.0674829960080388],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c12,F25:side:l20,F25:side:l25]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [67.42385583563794, 27.909039399665993, 3.072836372164602],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c12,F25:side:l19,F25:side:l28]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [85.18470651059874, 32.33087976960083, 12.535219577951523],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l4#[F25:side:c13,F25:side:l19,F25:side:l20,F25:side:l25,F25:side:l28,F25:side:l56,F25:side:l57,F25:side:l58,F25:side:l59]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-57.43454675668204, 29.230845034421293, 0.7452279536286142],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c14,F25:side:l32,F25:side:l37]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-63.78067793567578, 7.34746505605176, 0.8235266438601911],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a1#[F25:side:c14,F25:side:l31,F25:side:l40]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-92.14687151595206, 30.68702985509799, 16.04916604457469],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l4#[F25:side:c15,F25:side:l31,F25:side:l32,F25:side:l37,F25:side:l40,F25:side:l67,F25:side:l68,F25:side:l69,F25:side:l70]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-34.123087444651105, 27.25177145408611, 3.75],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:top"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-15.064029846278402, -67.17440573220313, 5.342586831531548],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c10,F25:side:l13,F25:side:l8]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [10.219198115737015, -69.61517382937632, 5.82254335816981],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c10,F25:side:l16,F25:side:l7]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-7.469626727596108, -89.06542355125225, 15.305330542841261],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l8#[F25:side:c11,F25:side:l13,F25:side:l16,F25:side:l7,F25:side:l8]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-71.44168667026167, 10.277345177255484, 6.430116523681818],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c14,F25:side:l31,F25:side:l40]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-89.04540713183974, 16.695666748419285, 16.01880738052057],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l8#[F25:side:c15,F25:side:l31,F25:side:l32,F25:side:l37,F25:side:l40]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-70.11627470383615, 28.790805351826748, 7.87568956127609],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c14,F25:side:l32,F25:side:l37]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [77.94787167418475, 7.490995547120974, 9.19368866503919],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c12,F25:side:l20,F25:side:l25]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [87.61632155461064, 14.042060294176054, 14.939035031033086],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:l8#[F25:side:c13,F25:side:l19,F25:side:l20,F25:side:l25,F25:side:l28]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [72.15635551132, 30.794496862093695, 9.287733023843998],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F8:side:a2#[F25:side:c12,F25:side:l19,F25:side:l28]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [34.450960857552346, 34.137316894122705, 0.6605143324820091],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l19"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [22.08037804002568, 36.223594504744824, 0.3126944258595046],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c2#[F25:side:l19,F25:side:l32]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-35.883387788783025, 34.35321960026238, 0.21059990749351698],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l32"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-19.78617868483002, -80.02172771671599, 8.237301104469893],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l8"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-28.593660353150995, -30.855519298480885, 1.247290843641963],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c2#[F25:side:l31,F25:side:l8]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-49.89956935422322, -11.162652522486553, 0.535116820060594],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l31"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [2.8856476001453757, -70.89507999515172, 4.282087337823185],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l16"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [52.999750883802335, -9.945918698754781, 2.010070615938986],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l20"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [27.74583404061582, -31.680064806614723, 1.2412617504668333],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c2#[F25:side:l20,F25:side:l7]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [23.97547197986046, -42.84093005345835, 1.3904864921320836],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l7"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-3.153062054200859, -61.981264859969656, 1.9106850030512987],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l13"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-1.0035564823706409, -55.67514018583779, 1.5387944381993748],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c10"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [53.650355823899645, 14.26304563334935, 2.104323350169068],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c12"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [64.38733354077777, 14.108240929876047, 3.455025285786519],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l25"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [22.2029884680627, -16.05080504409381, 2.512001116858073],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c1"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-62.3718092941408, 13.502850693517075, 3.108122652995064],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l40"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-60.042407196701106, 19.321052347180796, 1.4998105284608414],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l37"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-54.59681530778255, 17.619581970672698, 1.6904953277054346],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c14"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-106.72889254083964, 28.590707368960807, 24.95343505211372],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c15"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [0.8388987249200603, -110.27810666920129, 24.194778375729356],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c11"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [62.12700147952057, 19.813124364335863, 1.4253281640659452],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:l28"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [106.72098857939011, 27.66796585883328, 23.93079731963678],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F25:side:c13"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [31.32015317534558, -19.864263598881507, 1.3825076162858068],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c7"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [30.826674534246706, 14.415929342831419, 1.4690018639396385],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c8"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-0.40720691818876276, 31.537360163985227, 1.4124035297606952],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c3"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-28.400242802731015, 14.654053476827357, 1.5791484010535441],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c4"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-29.342442407721336, -20.200875336338413, 2.1485574828960807],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c5"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [0.8879987444827862, -37.35155185005783, 0.8283868463901172],
+        "look": {
+          "name": "Steel - Brushed",
+          "color": [160, 164, 170],
+          "opacity": 1.0
+        },
+        "name": "F2:side:c6"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-79.73908584437132, 153.621046772534, 55.30208132693788],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:top)#[F5:side:c2]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [156.06349094940165, 23.879773279783084, 63.43642259375795],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:top)#[F23:side:l14,F24:side:l78,F24:side:l79,F24:side:l83,F24:side:l86,F24:side:l87,F5:side:c1]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [150.01978239969452, 1.3869140624712835, 57.27463472665716],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:top)#[F5:side:c1]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [30.288109006991316, -145.2208272556733, 39.32098594374175],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F24:side:l78"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-6.947952323515694, -138.41225711288087, 52.86720726218763],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:l14#[F23:side:a3,F24:side:c17,F24:side:c18,F24:side:l48,F24:side:l49,F24:side:l78,F24:side:l79]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-34.615327761328636, -148.3719837586332, 60.81134127480981],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:l14#[F23:side:l79,F24:side:l78,F24:side:l79]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-6.51661454161286, -131.07129009874043, 46.776900903904014],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:a3#[F24:side:a1,F24:side:a2,F24:side:l48,F24:side:l49]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-6.857800292297704, -132.31293998011697, 31.87357051901982],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:a8#[F24:side:a1,F24:side:a2]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-3.4322812435290246, -134.77869619773492, 32.94279075984768],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:l19#[F24:side:a1,F24:side:a2,F24:side:c17,F24:side:c18,F24:side:l48,F24:side:l49]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [-17.77223937600753, -138.6026863813268, 35.62505110091297],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:a9#[F24:side:c17,F24:side:c18]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [19.80923907681924, -129.8094381036133, 40.753086631295986],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F24:side:a1"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [20.828209419893835, -133.6503946152453, 44.93955405679794],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F24:side:l48"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [27.05230703849135, -144.15386142353464, 39.37136001686536],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F24:side:c17"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [16.28828843750346, -146.05591729264134, 35.74115193436132],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F23:side:a5#[F23:side:a9,F24:side:c17,F24:side:c18,F24:side:l78,F24:side:l79]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [34.42475002790676, -144.2679039034607, 46.44166666666669],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F5:side:c1#[F24:side:l78]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [148.41241378116914, 1.356036596357419, 47.625],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F5:side:c1#[F24:side:l84]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [173.59661257302844, 5.2064955980653, 46.44166666666666],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F5:side:c2"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [162.1772857281742, 24.865635139775293, 31.813577406242047],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:start)#[F5:side:c2]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [118.58005703114567, 89.71538010266174, 40.97611188576524],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:start)#[F23:side:a5,F24:side:l78,F24:side:l79,F24:side:l83,F24:side:l86,F24:side:l87,F5:side:c1]"
+      },
+      {
+        "body": "Center Wheel",
+        "point": [148.32767977875267, 5.375974977673917, 43.47463040076855],
+        "look": {
+          "name": "Rubber - Black",
+          "color": [26, 26, 26],
+          "opacity": 1.0
+        },
+        "name": "F6:blend(F5:side:c1|F5:start)#[F5:side:c1]"
+      }
+    ]
   },
   "visibility": {
     "hidden_bodies": [
@@ -4932,7 +5508,7 @@
     "hidden_origin": [
       "Plane1"
     ],
-    "hidden_sketches": [7, 4, 1],
+    "hidden_sketches": [4, 7, 1],
     "shown_sketches": []
   }
 }
