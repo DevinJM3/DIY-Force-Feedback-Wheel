@@ -1,5 +1,5 @@
 {
-  "format": "solidcraft/68",
+  "format": "solidcraft/69",
   "name": "Wheel Shaft Extension",
   "units": "mm",
   "params": [
@@ -52,18 +52,6 @@
       "model": true
     },
     {
-      "name": "d13",
-      "expr": "7.5",
-      "unit": "mm",
-      "model": true
-    },
-    {
-      "name": "d14",
-      "expr": "2.5+(d13/2)",
-      "unit": "mm",
-      "model": true
-    },
-    {
       "name": "d15",
       "expr": "65.5",
       "unit": "mm",
@@ -78,6 +66,60 @@
     {
       "name": "d17",
       "expr": "6.5",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d18",
+      "expr": "-120",
+      "unit": "deg",
+      "model": true
+    },
+    {
+      "name": "d19",
+      "expr": "5",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d14",
+      "expr": "4",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d13",
+      "expr": "4.5+(d14/2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d22",
+      "expr": "4",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d21",
+      "expr": "2.5+(d22/2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d23",
+      "expr": "2.5+(d24/2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d24",
+      "expr": "8",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d26",
+      "expr": "12.5",
       "unit": "mm",
       "model": true
     }
@@ -1112,18 +1154,153 @@
             "link": "j1"
           },
           {
-            "id": "p2",
-            "pos": [-0.11359120950006688, 41.49984454270335],
+            "id": "p3",
+            "pos": [2.2052857012194314e-15, 41.5000000000003],
             "fixed": false
           },
           {
-            "id": "l1.end",
-            "pos": [-0.11359120950110083, 35.249844543081096],
+            "id": "p4",
+            "pos": [2.2052857012194314e-15, 35.0000000000003],
             "fixed": false
           },
           {
-            "id": "c3.center",
-            "pos": [-0.11359120950168078, 35.24984454329298],
+            "id": "c4.center",
+            "pos": [2.2052857012194314e-15, 35.0000000000003],
+            "fixed": false
+          },
+          {
+            "id": "p5",
+            "pos": [-30.31088913245561, 17.500000000000156],
+            "fixed": false
+          },
+          {
+            "id": "p6",
+            "pos": [-30.310889132455614, -17.50000000000014],
+            "fixed": false
+          },
+          {
+            "id": "p7",
+            "pos": [-6.491549498235204e-15, -35.0000000000003],
+            "fixed": false
+          },
+          {
+            "id": "p8",
+            "pos": [30.3108891324556, -17.500000000000167],
+            "fixed": false
+          },
+          {
+            "id": "p9",
+            "pos": [30.31088913245561, 17.50000000000015],
+            "fixed": false
+          },
+          {
+            "id": "p10",
+            "pos": [20.749999779979717, 35.9400543840821],
+            "fixed": false
+          },
+          {
+            "id": "p11",
+            "pos": [18.500000025554918, 32.04293992528163],
+            "fixed": false
+          },
+          {
+            "id": "c10.center",
+            "pos": [18.50000002555989, 32.042939925290234],
+            "fixed": false
+          },
+          {
+            "id": "p12",
+            "pos": [-18.49999997446004, 32.04293995479274],
+            "fixed": false
+          },
+          {
+            "id": "p13",
+            "pos": [-37.00000000001993, 2.9502519538482375e-8],
+            "fixed": false
+          },
+          {
+            "id": "p14",
+            "pos": [-18.500000025559892, -32.042939925290234],
+            "fixed": false
+          },
+          {
+            "id": "p15",
+            "pos": [18.499999974460025, -32.04293995479276],
+            "fixed": false
+          },
+          {
+            "id": "p16",
+            "pos": [37.00000000001993, -2.950250532762766e-8],
+            "fixed": false
+          },
+          {
+            "id": "p17",
+            "pos": [10.740990380764673, 40.085921788581075],
+            "fixed": false
+          },
+          {
+            "id": "p18",
+            "pos": [9.058666565266074, 33.807403923686195],
+            "fixed": false
+          },
+          {
+            "id": "c16.center",
+            "pos": [9.058666565266101, 33.807403923686294],
+            "fixed": false
+          },
+          {
+            "id": "p19",
+            "pos": [-9.058666591909974, 33.80740391654709],
+            "fixed": false
+          },
+          {
+            "id": "p20",
+            "pos": [-24.748737351280987, 24.74873733177632],
+            "fixed": false
+          },
+          {
+            "id": "p21",
+            "pos": [-33.807403923686294, 9.058666565266103],
+            "fixed": false
+          },
+          {
+            "id": "p22",
+            "pos": [-33.80740391654709, -9.05866659190997],
+            "fixed": false
+          },
+          {
+            "id": "p23",
+            "pos": [-24.74873733177631, -24.74873735128099],
+            "fixed": false
+          },
+          {
+            "id": "p24",
+            "pos": [-9.058666565266105, -33.807403923686294],
+            "fixed": false
+          },
+          {
+            "id": "p25",
+            "pos": [9.058666591909983, -33.80740391654709],
+            "fixed": false
+          },
+          {
+            "id": "p26",
+            "pos": [24.748737351280976, -24.74873733177633],
+            "fixed": false
+          },
+          {
+            "id": "p27",
+            "pos": [33.807403923686294, -9.058666565266106],
+            "fixed": false
+          },
+          {
+            "id": "p28",
+            "pos": [33.80740391654709, 9.058666591909983],
+            "fixed": false
+          },
+          {
+            "id": "p29",
+            "pos": [24.74873733177633, 24.748737351280976],
             "fixed": false
           }
         ],
@@ -1145,53 +1322,1079 @@
             "link": "j1"
           },
           {
-            "id": "l1",
+            "id": "l3",
             "type": "line",
             "a": 2,
             "b": 3,
             "construction": false
           },
           {
-            "id": "c3",
+            "id": "c4",
             "type": "circle",
             "c": 4,
-            "r": 3.75,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c5",
+            "type": "circle",
+            "c": 5,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c6",
+            "type": "circle",
+            "c": 6,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c7",
+            "type": "circle",
+            "c": 7,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c8",
+            "type": "circle",
+            "c": 8,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c9",
+            "type": "circle",
+            "c": 9,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "l5",
+            "type": "line",
+            "a": 10,
+            "b": 11,
+            "construction": false
+          },
+          {
+            "id": "c10",
+            "type": "circle",
+            "c": 12,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c11",
+            "type": "circle",
+            "c": 13,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c12",
+            "type": "circle",
+            "c": 14,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c13",
+            "type": "circle",
+            "c": 15,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c14",
+            "type": "circle",
+            "c": 16,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "c15",
+            "type": "circle",
+            "c": 17,
+            "r": 2.0,
+            "construction": false
+          },
+          {
+            "id": "l7",
+            "type": "line",
+            "a": 18,
+            "b": 19,
+            "construction": false
+          },
+          {
+            "id": "c16",
+            "type": "circle",
+            "c": 20,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c17",
+            "type": "circle",
+            "c": 21,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c18",
+            "type": "circle",
+            "c": 22,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c19",
+            "type": "circle",
+            "c": 23,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c20",
+            "type": "circle",
+            "c": 24,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c21",
+            "type": "circle",
+            "c": 25,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c22",
+            "type": "circle",
+            "c": 26,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c23",
+            "type": "circle",
+            "c": 27,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c24",
+            "type": "circle",
+            "c": 28,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c25",
+            "type": "circle",
+            "c": 29,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c26",
+            "type": "circle",
+            "c": 30,
+            "r": 4.0,
+            "construction": false
+          },
+          {
+            "id": "c27",
+            "type": "circle",
+            "c": 31,
+            "r": 4.0,
             "construction": false
           }
         ],
         "constraints": [
           {
-            "id": "k1",
+            "id": "k7",
             "type": "point_on_curve",
             "p": 2,
             "c": 0
           },
           {
-            "id": "k2",
+            "id": "k10",
             "type": "vertical",
             "l": 2
           },
           {
-            "id": "k3",
+            "id": "k11",
             "type": "coincident",
             "p": 3,
             "q": 4
           },
           {
-            "id": "k4",
+            "id": "k12",
             "type": "diameter",
             "c": 3,
-            "value": 7.5,
-            "param": "d13",
-            "text": [-3.8857233960388573, -3.5]
+            "value": 4.0,
+            "param": "d14"
           },
           {
-            "id": "k5",
+            "id": "k13",
             "type": "length",
             "l": 2,
-            "value": 6.25,
-            "param": "d14",
-            "text": [0.09992133031946045, -6.285723396038858]
+            "value": 6.5,
+            "param": "d13",
+            "text": [0.04756194488265016, -4.600000000000001]
+          },
+          {
+            "id": "k14",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 5,
+            "center": 0,
+            "angle": 1.0471975511965976,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k15",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 4
+          },
+          {
+            "id": "k16",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 6,
+            "center": 0,
+            "angle": 2.0943951023931953,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k17",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 5
+          },
+          {
+            "id": "k18",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 7,
+            "center": 0,
+            "angle": 3.141592653589793,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k19",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 6
+          },
+          {
+            "id": "k20",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 8,
+            "center": 0,
+            "angle": 4.1887902047863905,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k21",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 7
+          },
+          {
+            "id": "k22",
+            "type": "pattern_point",
+            "p": 4,
+            "q": 9,
+            "center": 0,
+            "angle": 5.235987755982989,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k23",
+            "type": "pattern_radius",
+            "a": 3,
+            "b": 8
+          },
+          {
+            "id": "k25",
+            "type": "point_on_curve",
+            "p": 10,
+            "c": 0
+          },
+          {
+            "id": "k28",
+            "type": "coincident",
+            "p": 11,
+            "q": 12
+          },
+          {
+            "id": "k29",
+            "type": "diameter",
+            "c": 10,
+            "value": 4.0,
+            "param": "d22"
+          },
+          {
+            "id": "k30",
+            "type": "length",
+            "l": 9,
+            "value": 4.5,
+            "param": "d21",
+            "text": [1.0382080059315246, 3.692751262122312]
+          },
+          {
+            "id": "k31",
+            "type": "pattern_point",
+            "p": 12,
+            "q": 13,
+            "center": 0,
+            "angle": 1.0471975511965976,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k32",
+            "type": "pattern_radius",
+            "a": 10,
+            "b": 11
+          },
+          {
+            "id": "k33",
+            "type": "pattern_point",
+            "p": 12,
+            "q": 14,
+            "center": 0,
+            "angle": 2.0943951023931953,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k34",
+            "type": "pattern_radius",
+            "a": 10,
+            "b": 12
+          },
+          {
+            "id": "k35",
+            "type": "pattern_point",
+            "p": 12,
+            "q": 15,
+            "center": 0,
+            "angle": 3.141592653589793,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k36",
+            "type": "pattern_radius",
+            "a": 10,
+            "b": 13
+          },
+          {
+            "id": "k37",
+            "type": "pattern_point",
+            "p": 12,
+            "q": 16,
+            "center": 0,
+            "angle": 4.1887902047863905,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k38",
+            "type": "pattern_radius",
+            "a": 10,
+            "b": 14
+          },
+          {
+            "id": "k39",
+            "type": "pattern_point",
+            "p": 12,
+            "q": 17,
+            "center": 0,
+            "angle": 5.235987755982989,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k40",
+            "type": "pattern_radius",
+            "a": 10,
+            "b": 15
+          },
+          {
+            "id": "k42",
+            "type": "point_on_curve",
+            "p": 18,
+            "c": 0
+          },
+          {
+            "id": "k45",
+            "type": "coincident",
+            "p": 19,
+            "q": 20
+          },
+          {
+            "id": "k46",
+            "type": "length",
+            "l": 16,
+            "value": 6.5,
+            "param": "d23",
+            "text": [-0.16991129170763586, -4.039568756161378]
+          },
+          {
+            "id": "k47",
+            "type": "diameter",
+            "c": 17,
+            "value": 8.0,
+            "param": "d24",
+            "text": [-4.164533234855947, -4.788144312552866]
+          },
+          {
+            "id": "k48",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 21,
+            "center": 0,
+            "angle": 0.5235987755982988,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k49",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 18
+          },
+          {
+            "id": "k50",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 22,
+            "center": 0,
+            "angle": 1.0471975511965976,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k51",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 19
+          },
+          {
+            "id": "k52",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 23,
+            "center": 0,
+            "angle": 1.5707963267948966,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k53",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 20
+          },
+          {
+            "id": "k54",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 24,
+            "center": 0,
+            "angle": 2.0943951023931953,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k55",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 21
+          },
+          {
+            "id": "k56",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 25,
+            "center": 0,
+            "angle": 2.6179938779914944,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k57",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 22
+          },
+          {
+            "id": "k58",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 26,
+            "center": 0,
+            "angle": 3.141592653589793,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k59",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 23
+          },
+          {
+            "id": "k60",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 27,
+            "center": 0,
+            "angle": 3.6651914291880923,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k61",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 24
+          },
+          {
+            "id": "k62",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 28,
+            "center": 0,
+            "angle": 4.1887902047863905,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k63",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 25
+          },
+          {
+            "id": "k64",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 29,
+            "center": 0,
+            "angle": 4.71238898038469,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k65",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 26
+          },
+          {
+            "id": "k66",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 30,
+            "center": 0,
+            "angle": 5.235987755982989,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k67",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 27
+          },
+          {
+            "id": "k68",
+            "type": "pattern_point",
+            "p": 20,
+            "q": 31,
+            "center": 0,
+            "angle": 5.759586531581287,
+            "offset": [0.0, 0.0],
+            "directions": [
+              null,
+              null
+            ]
+          },
+          {
+            "id": "k69",
+            "type": "pattern_radius",
+            "a": 17,
+            "b": 28
+          }
+        ],
+        "patterns": [
+          {
+            "id": "pat1",
+            "entities": [
+              "c4"
+            ],
+            "kind": {
+              "type": "circular",
+              "center": "origin",
+              "count": 6,
+              "angle": 360.0,
+              "alignment": "right",
+              "reversed": false
+            },
+            "count_expression": "6",
+            "instances": [
+              {
+                "index": [1, 0],
+                "curves": [
+                  "c5"
+                ],
+                "points": [
+                  [
+                    "c4.center",
+                    "p5"
+                  ]
+                ],
+                "constraints": [
+                  "k14",
+                  "k15"
+                ]
+              },
+              {
+                "index": [2, 0],
+                "curves": [
+                  "c6"
+                ],
+                "points": [
+                  [
+                    "c4.center",
+                    "p6"
+                  ]
+                ],
+                "constraints": [
+                  "k16",
+                  "k17"
+                ]
+              },
+              {
+                "index": [3, 0],
+                "curves": [
+                  "c7"
+                ],
+                "points": [
+                  [
+                    "c4.center",
+                    "p7"
+                  ]
+                ],
+                "constraints": [
+                  "k18",
+                  "k19"
+                ]
+              },
+              {
+                "index": [4, 0],
+                "curves": [
+                  "c8"
+                ],
+                "points": [
+                  [
+                    "c4.center",
+                    "p8"
+                  ]
+                ],
+                "constraints": [
+                  "k20",
+                  "k21"
+                ]
+              },
+              {
+                "index": [5, 0],
+                "curves": [
+                  "c9"
+                ],
+                "points": [
+                  [
+                    "c4.center",
+                    "p9"
+                  ]
+                ],
+                "constraints": [
+                  "k22",
+                  "k23"
+                ]
+              }
+            ],
+            "expressions": {
+              "angle": "360 deg"
+            }
+          },
+          {
+            "id": "pat2",
+            "entities": [
+              "c10"
+            ],
+            "kind": {
+              "type": "circular",
+              "center": "origin",
+              "count": 6,
+              "angle": 360.0,
+              "alignment": "right",
+              "reversed": false
+            },
+            "count_expression": "6",
+            "instances": [
+              {
+                "index": [1, 0],
+                "curves": [
+                  "c11"
+                ],
+                "points": [
+                  [
+                    "c10.center",
+                    "p12"
+                  ]
+                ],
+                "constraints": [
+                  "k31",
+                  "k32"
+                ]
+              },
+              {
+                "index": [2, 0],
+                "curves": [
+                  "c12"
+                ],
+                "points": [
+                  [
+                    "c10.center",
+                    "p13"
+                  ]
+                ],
+                "constraints": [
+                  "k33",
+                  "k34"
+                ]
+              },
+              {
+                "index": [3, 0],
+                "curves": [
+                  "c13"
+                ],
+                "points": [
+                  [
+                    "c10.center",
+                    "p14"
+                  ]
+                ],
+                "constraints": [
+                  "k35",
+                  "k36"
+                ]
+              },
+              {
+                "index": [4, 0],
+                "curves": [
+                  "c14"
+                ],
+                "points": [
+                  [
+                    "c10.center",
+                    "p15"
+                  ]
+                ],
+                "constraints": [
+                  "k37",
+                  "k38"
+                ]
+              },
+              {
+                "index": [5, 0],
+                "curves": [
+                  "c15"
+                ],
+                "points": [
+                  [
+                    "c10.center",
+                    "p16"
+                  ]
+                ],
+                "constraints": [
+                  "k39",
+                  "k40"
+                ]
+              }
+            ],
+            "expressions": {
+              "angle": "360 deg"
+            }
+          },
+          {
+            "id": "pat3",
+            "entities": [
+              "c16"
+            ],
+            "kind": {
+              "type": "circular",
+              "center": "origin",
+              "count": 12,
+              "angle": 360.0,
+              "alignment": "right",
+              "reversed": false
+            },
+            "count_expression": "12",
+            "instances": [
+              {
+                "index": [1, 0],
+                "curves": [
+                  "c17"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p19"
+                  ]
+                ],
+                "constraints": [
+                  "k48",
+                  "k49"
+                ]
+              },
+              {
+                "index": [2, 0],
+                "curves": [
+                  "c18"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p20"
+                  ]
+                ],
+                "constraints": [
+                  "k50",
+                  "k51"
+                ]
+              },
+              {
+                "index": [3, 0],
+                "curves": [
+                  "c19"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p21"
+                  ]
+                ],
+                "constraints": [
+                  "k52",
+                  "k53"
+                ]
+              },
+              {
+                "index": [4, 0],
+                "curves": [
+                  "c20"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p22"
+                  ]
+                ],
+                "constraints": [
+                  "k54",
+                  "k55"
+                ]
+              },
+              {
+                "index": [5, 0],
+                "curves": [
+                  "c21"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p23"
+                  ]
+                ],
+                "constraints": [
+                  "k56",
+                  "k57"
+                ]
+              },
+              {
+                "index": [6, 0],
+                "curves": [
+                  "c22"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p24"
+                  ]
+                ],
+                "constraints": [
+                  "k58",
+                  "k59"
+                ]
+              },
+              {
+                "index": [7, 0],
+                "curves": [
+                  "c23"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p25"
+                  ]
+                ],
+                "constraints": [
+                  "k60",
+                  "k61"
+                ]
+              },
+              {
+                "index": [8, 0],
+                "curves": [
+                  "c24"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p26"
+                  ]
+                ],
+                "constraints": [
+                  "k62",
+                  "k63"
+                ]
+              },
+              {
+                "index": [9, 0],
+                "curves": [
+                  "c25"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p27"
+                  ]
+                ],
+                "constraints": [
+                  "k64",
+                  "k65"
+                ]
+              },
+              {
+                "index": [10, 0],
+                "curves": [
+                  "c26"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p28"
+                  ]
+                ],
+                "constraints": [
+                  "k66",
+                  "k67"
+                ]
+              },
+              {
+                "index": [11, 0],
+                "curves": [
+                  "c27"
+                ],
+                "points": [
+                  [
+                    "c16.center",
+                    "p29"
+                  ]
+                ],
+                "constraints": [
+                  "k68",
+                  "k69"
+                ]
+              }
+            ],
+            "expressions": {
+              "angle": "360 deg"
+            }
           }
         ],
         "links": [
@@ -1212,11 +2415,12 @@
           }
         ],
         "counters": {
-          "c": 3,
+          "c": 27,
           "j": 1,
-          "k": 5,
-          "l": 1,
-          "p": 2
+          "k": 69,
+          "l": 7,
+          "p": 29,
+          "pat": 3
         }
       }
     },
@@ -1400,6 +2604,31 @@
             "id": "a1.start",
             "pos": [34.0, 85.0],
             "fixed": false
+          },
+          {
+            "id": "p5",
+            "pos": [30.932751516288263, 79.68736978677266],
+            "fixed": false
+          },
+          {
+            "id": "c1.center",
+            "pos": [35.915822095050174, 78.31830120688996],
+            "fixed": false
+          },
+          {
+            "id": "p6",
+            "pos": [31.58569507612798, 80.81830120688996],
+            "fixed": false
+          },
+          {
+            "id": "p7",
+            "pos": [30.916222623748695, 78.38158727614693],
+            "fixed": false
+          },
+          {
+            "id": "p8",
+            "pos": [31.58569507612798, 80.81830120688996],
+            "fixed": false
           }
         ],
         "curves": [
@@ -1418,13 +2647,6 @@
             "construction": false
           },
           {
-            "id": "l3",
-            "type": "line",
-            "a": 1,
-            "b": 4,
-            "construction": false
-          },
-          {
             "id": "l4",
             "type": "line",
             "a": 4,
@@ -1435,7 +2657,7 @@
             "id": "l5",
             "type": "line",
             "a": 5,
-            "b": 1,
+            "b": 8,
             "construction": false
           },
           {
@@ -1446,6 +2668,21 @@
             "b": 5,
             "construction": false,
             "reversed": true
+          },
+          {
+            "id": "l6",
+            "type": "line",
+            "a": 2,
+            "b": 12,
+            "construction": false
+          },
+          {
+            "id": "c1",
+            "type": "arc",
+            "c": 9,
+            "a": 10,
+            "b": 11,
+            "construction": false
           }
         ],
         "constraints": [
@@ -1462,14 +2699,10 @@
             "param": "d16"
           },
           {
-            "id": "k3",
-            "type": "vertical",
-            "l": 2
-          },
-          {
             "id": "k4",
-            "type": "length",
-            "l": 2,
+            "type": "distance",
+            "p": 1,
+            "q": 4,
             "value": 6.5,
             "param": "d17"
           },
@@ -1482,13 +2715,51 @@
           {
             "id": "k6",
             "type": "horizontal",
-            "l": 3
+            "l": 2
           },
           {
             "id": "k7",
             "type": "tangent",
-            "a": 3,
-            "b": 5
+            "a": 2,
+            "b": 4
+          },
+          {
+            "id": "k8",
+            "type": "line_angle",
+            "l": 5,
+            "value": -2.0943951023931953,
+            "param": "d18"
+          },
+          {
+            "id": "k11",
+            "type": "tangent",
+            "a": 5,
+            "b": 6
+          },
+          {
+            "id": "k12",
+            "type": "tangent",
+            "a": 1,
+            "b": 6
+          },
+          {
+            "id": "k13",
+            "type": "radius",
+            "c": 6,
+            "value": 5.0,
+            "param": "d19"
+          },
+          {
+            "id": "k15",
+            "type": "point_on_curve",
+            "p": 11,
+            "c": 1
+          },
+          {
+            "id": "k16",
+            "type": "coincident",
+            "p": 12,
+            "q": 10
           }
         ],
         "links": [
@@ -1514,25 +2785,1303 @@
           }
         ],
         "counters": {
-          "a": 1,
+          "a": 2,
+          "c": 1,
           "j": 2,
-          "k": 7,
-          "l": 5,
-          "p": 3
+          "k": 20,
+          "l": 12,
+          "p": 11
         }
       }
+    },
+    {
+      "id": 13,
+      "name": "Revolve1",
+      "suppressed": false,
+      "param_names": [
+        "d20"
+      ],
+      "type": "revolve",
+      "sketch": 12,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "l1",
+            "l2",
+            "l2",
+            "l4",
+            "c1",
+            "l6"
+          ]
+        ]
+      },
+      "axis": {
+        "type": "model",
+        "geo": {
+          "type": "face",
+          "at": [13.626812122861253, 23.75377967631573, 62.234959046502354],
+          "name": "F2:side:c3"
+        }
+      },
+      "angle": "360 deg",
+      "operation": "join",
+      "convention": "sketch_normal"
+    },
+    {
+      "id": 14,
+      "name": "Extrude4",
+      "suppressed": false,
+      "param_names": [
+        "d25"
+      ],
+      "face_names": [
+        "F2:top"
+      ],
+      "type": "extrude",
+      "sketch": 9,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c19"
+          ],
+          [
+            "c12"
+          ],
+          [
+            "c20"
+          ],
+          [
+            "c6"
+          ],
+          [
+            "c21"
+          ],
+          [
+            "c13"
+          ],
+          [
+            "c22"
+          ],
+          [
+            "c7"
+          ],
+          [
+            "c23"
+          ],
+          [
+            "c14"
+          ],
+          [
+            "c24"
+          ],
+          [
+            "c8"
+          ],
+          [
+            "c25"
+          ],
+          [
+            "c15"
+          ],
+          [
+            "c26"
+          ],
+          [
+            "c9"
+          ],
+          [
+            "c27"
+          ],
+          [
+            "c10"
+          ],
+          [
+            "c5"
+          ],
+          [
+            "c18"
+          ],
+          [
+            "c11"
+          ],
+          [
+            "c17"
+          ],
+          [
+            "c4"
+          ],
+          [
+            "c16"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "95 mm",
+        "convention": "total_distance",
+        "direction": "negative",
+        "to": [-24.33591063759468, 26.815339423616933, 5.999999999999943]
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 15,
+      "name": "Sketch8",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [0.0, 0.0, 101.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, 1.0, 0.0]
+        },
+        "at": [-15.85750787751465, -26.834698216688366, 101.0],
+        "name": "F3:top#2",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 3,
+            "name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 101.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": true,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p2",
+            "pos": [-33.807403916547095, -9.058666591909972],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p3",
+            "pos": [-33.807403923686294, 9.058666565266103],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p4",
+            "pos": [-24.74873733177631, -24.748737351280987],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p5",
+            "pos": [-24.74873735128099, 24.74873733177632],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p6",
+            "pos": [-9.058666565266105, -33.807403923686294],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p7",
+            "pos": [-9.058666591909976, 33.80740391654709],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p8",
+            "pos": [9.058666591909988, -33.80740391654709],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p9",
+            "pos": [9.0586665652661, 33.80740392368628],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p10",
+            "pos": [24.748737351280976, -24.748737331776326],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p11",
+            "pos": [24.748737331776322, 24.74873735128097],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p12",
+            "pos": [33.807403923686294, -9.058666565266106],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p13",
+            "pos": [33.80740391654709, 9.058666591909985],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p14",
+            "pos": [-37.00000000001993, 2.9502517094669095e-8],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p15",
+            "pos": [-30.310889132455607, -17.500000000000135],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p16",
+            "pos": [-30.31088913245561, 17.500000000000156],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p17",
+            "pos": [-18.500000025559892, -32.042939925290234],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p18",
+            "pos": [-18.49999997446004, 32.04293995479274],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p19",
+            "pos": [-6.439293542825908e-15, -35.0000000000003],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p20",
+            "pos": [2.3277503811341666e-15, 35.0000000000003],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p21",
+            "pos": [18.499999974460025, -32.04293995479276],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p22",
+            "pos": [18.500000025559885, 32.042939925290234],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p23",
+            "pos": [30.3108891324556, -17.500000000000167],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p24",
+            "pos": [30.31088913245561, 17.50000000000015],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p25",
+            "pos": [37.00000000001993, -2.950250532762766e-8],
+            "fixed": true,
+            "link": "j1"
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 2,
+            "r": 4.000000000000007,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c4",
+            "type": "circle",
+            "c": 3,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c5",
+            "type": "circle",
+            "c": 4,
+            "r": 3.999999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c6",
+            "type": "circle",
+            "c": 5,
+            "r": 4.000000000000003,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c7",
+            "type": "circle",
+            "c": 6,
+            "r": 4.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c8",
+            "type": "circle",
+            "c": 7,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c9",
+            "type": "circle",
+            "c": 8,
+            "r": 3.9999999999999942,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c10",
+            "type": "circle",
+            "c": 9,
+            "r": 4.000000000000013,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c11",
+            "type": "circle",
+            "c": 10,
+            "r": 4.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c12",
+            "type": "circle",
+            "c": 11,
+            "r": 4.000000000000008,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c13",
+            "type": "circle",
+            "c": 12,
+            "r": 3.9999999999999987,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c14",
+            "type": "circle",
+            "c": 13,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c15",
+            "type": "circle",
+            "c": 14,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c16",
+            "type": "circle",
+            "c": 15,
+            "r": 1.9999999999999922,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c17",
+            "type": "circle",
+            "c": 16,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c18",
+            "type": "circle",
+            "c": 17,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c19",
+            "type": "circle",
+            "c": 18,
+            "r": 1.9999999999999987,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c20",
+            "type": "circle",
+            "c": 19,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c21",
+            "type": "circle",
+            "c": 20,
+            "r": 2.0000000000000004,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c22",
+            "type": "circle",
+            "c": 21,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c23",
+            "type": "circle",
+            "c": 22,
+            "r": 2.0000000000000018,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c24",
+            "type": "circle",
+            "c": 23,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c25",
+            "type": "circle",
+            "c": 24,
+            "r": 2.000000000000003,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c26",
+            "type": "circle",
+            "c": 25,
+            "r": 2.0000000000000004,
+            "construction": false,
+            "link": "j1"
+          }
+        ],
+        "constraints": [],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [29.33988044641586, 9.34023642245507, 101.0]
+            },
+            "face_name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F3:side:c1|F3:top#2",
+              "F2:side:c3|F3:top#2",
+              "F14:side:c20|F3:top#2",
+              "F14:side:c19|F3:top#2",
+              "F14:side:c21|F3:top#2",
+              "F14:side:c18|F3:top#2",
+              "F14:side:c22|F3:top#2",
+              "F14:side:c17|F3:top#2",
+              "F14:side:c23|F3:top#2",
+              "F14:side:c16|F3:top#2",
+              "F14:side:c24|F3:top#2",
+              "F14:side:c27|F3:top#2",
+              "F14:side:c25|F3:top#2",
+              "F14:side:c26|F3:top#2",
+              "F14:side:c12|F3:top#2",
+              "F14:side:c6|F3:top#2",
+              "F14:side:c5|F3:top#2",
+              "F14:side:c13|F3:top#2",
+              "F14:side:c11|F3:top#2",
+              "F14:side:c7|F3:top#2",
+              "F14:side:c4|F3:top#2",
+              "F14:side:c14|F3:top#2",
+              "F14:side:c10|F3:top#2",
+              "F14:side:c8|F3:top#2",
+              "F14:side:c9|F3:top#2",
+              "F14:side:c15|F3:top#2"
+            ],
+            "auto_face": true
+          }
+        ],
+        "counters": {
+          "c": 26,
+          "j": 1,
+          "p": 25
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "Sketch9",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "face",
+        "plane": {
+          "origin": [0.0, 0.0, 101.0],
+          "x_dir": [1.0, 0.0, 0.0],
+          "y_dir": [0.0, 1.0, 0.0]
+        },
+        "at": [-30.43714320446547, -3.331965646733863, 101.00000000000011],
+        "name": "F3:top#2",
+        "anchor": {
+          "target": {
+            "body": "Body1",
+            "origin_feature": 3,
+            "name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "point": [0.0, 0.0, 101.0],
+            "certificate": {
+              "kind": "extrude_cap",
+              "sketch": 1,
+              "high": true,
+              "outer": [
+                "c1"
+              ],
+              "holes": [
+                [
+                  "c3"
+                ]
+              ]
+            }
+          },
+          "component": 0,
+          "path": [],
+          "author_path": [],
+          "coordinates": [0.0, 0.0],
+          "x_axis": [1.0, 0.0]
+        }
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [0.0, 0.0],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [7.105427357601002e-15, 0.0],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p2",
+            "pos": [-33.807403916547095, -9.058666591909972],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p3",
+            "pos": [-33.807403923686294, 9.058666565266103],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p4",
+            "pos": [-24.74873733177631, -24.748737351280987],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p5",
+            "pos": [-24.74873735128099, 24.74873733177632],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p6",
+            "pos": [-9.058666565266105, -33.807403923686294],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p7",
+            "pos": [-9.058666591909976, 33.80740391654709],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p8",
+            "pos": [9.058666591909988, -33.80740391654709],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p9",
+            "pos": [9.0586665652661, 33.80740392368628],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p10",
+            "pos": [24.748737351280976, -24.748737331776326],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p11",
+            "pos": [24.748737331776322, 24.74873735128097],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p12",
+            "pos": [33.807403923686294, -9.058666565266106],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p13",
+            "pos": [33.80740391654709, 9.058666591909985],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p14",
+            "pos": [-37.00000000001993, 2.9502517094669095e-8],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p15",
+            "pos": [-30.310889132455607, -17.500000000000135],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p16",
+            "pos": [-30.31088913245561, 17.500000000000156],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p17",
+            "pos": [-18.500000025559892, -32.042939925290234],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p18",
+            "pos": [-18.49999997446004, 32.04293995479274],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p19",
+            "pos": [-6.439293542825908e-15, -35.0000000000003],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p20",
+            "pos": [2.3277503811341666e-15, 35.0000000000003],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p21",
+            "pos": [18.499999974460025, -32.04293995479276],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p22",
+            "pos": [18.500000025559885, 32.042939925290234],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p23",
+            "pos": [30.3108891324556, -17.500000000000167],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p24",
+            "pos": [30.31088913245561, 17.50000000000015],
+            "fixed": true,
+            "link": "j1"
+          },
+          {
+            "id": "p25",
+            "pos": [37.00000000001993, -2.950250532762766e-8],
+            "fixed": true,
+            "link": "j1"
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 41.49999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c2",
+            "type": "circle",
+            "c": 1,
+            "r": 27.5,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c3",
+            "type": "circle",
+            "c": 2,
+            "r": 4.000000000000007,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c4",
+            "type": "circle",
+            "c": 3,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c5",
+            "type": "circle",
+            "c": 4,
+            "r": 3.999999999999999,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c6",
+            "type": "circle",
+            "c": 5,
+            "r": 4.000000000000003,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c7",
+            "type": "circle",
+            "c": 6,
+            "r": 4.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c8",
+            "type": "circle",
+            "c": 7,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c9",
+            "type": "circle",
+            "c": 8,
+            "r": 3.9999999999999942,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c10",
+            "type": "circle",
+            "c": 9,
+            "r": 4.000000000000013,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c11",
+            "type": "circle",
+            "c": 10,
+            "r": 4.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c12",
+            "type": "circle",
+            "c": 11,
+            "r": 4.000000000000008,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c13",
+            "type": "circle",
+            "c": 12,
+            "r": 3.9999999999999987,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c14",
+            "type": "circle",
+            "c": 13,
+            "r": 4.000000000000002,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c15",
+            "type": "circle",
+            "c": 14,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c16",
+            "type": "circle",
+            "c": 15,
+            "r": 1.9999999999999922,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c17",
+            "type": "circle",
+            "c": 16,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c18",
+            "type": "circle",
+            "c": 17,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c19",
+            "type": "circle",
+            "c": 18,
+            "r": 1.9999999999999987,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c20",
+            "type": "circle",
+            "c": 19,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c21",
+            "type": "circle",
+            "c": 20,
+            "r": 2.0000000000000004,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c22",
+            "type": "circle",
+            "c": 21,
+            "r": 2.000000000000001,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c23",
+            "type": "circle",
+            "c": 22,
+            "r": 2.0000000000000018,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c24",
+            "type": "circle",
+            "c": 23,
+            "r": 2.0,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c25",
+            "type": "circle",
+            "c": 24,
+            "r": 2.000000000000003,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c26",
+            "type": "circle",
+            "c": 25,
+            "r": 2.0000000000000004,
+            "construction": false,
+            "link": "j1"
+          },
+          {
+            "id": "c27",
+            "type": "circle",
+            "c": 1,
+            "r": 28.999999999999993,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "offset_distance",
+            "output": "c27",
+            "value": 12.5,
+            "reverse": false,
+            "param": "d26"
+          }
+        ],
+        "links": [
+          {
+            "id": "j1",
+            "kind": "project",
+            "source": {
+              "type": "face",
+              "body": "Body1",
+              "at": [29.33988044641586, 9.34023642245507, 101.0]
+            },
+            "face_name": "F3:cap:high:2e3709deede766905f0ba4a238b1484cc4474730feeae011cad3f17616188d20",
+            "curve_edges": [
+              "F3:side:c1|F3:top#2",
+              "F2:side:c3|F3:top#2",
+              "F14:side:c20|F3:top#2",
+              "F14:side:c19|F3:top#2",
+              "F14:side:c21|F3:top#2",
+              "F14:side:c18|F3:top#2",
+              "F14:side:c22|F3:top#2",
+              "F14:side:c17|F3:top#2",
+              "F14:side:c23|F3:top#2",
+              "F14:side:c16|F3:top#2",
+              "F14:side:c24|F3:top#2",
+              "F14:side:c27|F3:top#2",
+              "F14:side:c25|F3:top#2",
+              "F14:side:c26|F3:top#2",
+              "F14:side:c12|F3:top#2",
+              "F14:side:c6|F3:top#2",
+              "F14:side:c5|F3:top#2",
+              "F14:side:c13|F3:top#2",
+              "F14:side:c11|F3:top#2",
+              "F14:side:c7|F3:top#2",
+              "F14:side:c4|F3:top#2",
+              "F14:side:c14|F3:top#2",
+              "F14:side:c10|F3:top#2",
+              "F14:side:c8|F3:top#2",
+              "F14:side:c9|F3:top#2",
+              "F14:side:c15|F3:top#2"
+            ],
+            "auto_face": true
+          }
+        ],
+        "offsets": [
+          {
+            "sources": [
+              [
+                "c1",
+                true
+              ]
+            ],
+            "outputs": [
+              "c27"
+            ],
+            "distance": 12.5,
+            "closed": true
+          }
+        ],
+        "counters": {
+          "c": 27,
+          "j": 1,
+          "k": 1,
+          "p": 25
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Extrude5",
+      "suppressed": false,
+      "param_names": [
+        "d27"
+      ],
+      "type": "extrude",
+      "sketch": 16,
+      "profiles": {
+        "type": "curves",
+        "loops": [
+          [
+            "c27"
+          ]
+        ]
+      },
+      "extent": {
+        "distance": "-5",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 18,
+      "name": "Chamfer1",
+      "suppressed": false,
+      "param_names": [
+        "d28"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.5, -41.5, -3.3677786976552213e-15],
+          "max": [41.5, 41.5, 101.00000000000001]
+        },
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.5, -41.5, -3.3677786976552213e-15],
+          "max": [41.5, 41.5, 101.00000000000001]
+        },
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.5, -41.5, -3.3677786976552213e-15],
+          "max": [41.5, 41.5, 101.00000000000001]
+        },
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.5, -41.5, -3.3677786976552213e-15],
+          "max": [41.5, 41.5, 101.00000000000001]
+        }
+      ],
+      "edge_names": [
+        "F3:side:c1|F3:top#1",
+        "F3:side:c1|F3:top#2",
+        "F2:side:c1|F2:top",
+        "F2:side:c1|F2:start"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-41.5, -5.170362134279511e-14, 85.0],
+        [-41.5, -5.170362134279511e-14, 101.0],
+        [-41.5, -5.170362134279511e-14, 6.0],
+        [-41.5, -5.170362134279511e-14, 0.0]
+      ],
+      "distance": ".5",
+      "body": "Body1"
+    },
+    {
+      "id": 19,
+      "name": "Chamfer2",
+      "suppressed": false,
+      "param_names": [
+        "d29"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.50000000000001, -41.50000000000001, -1.820765760385257e-12],
+          "max": [41.5, 41.5, 101.00000000000038]
+        }
+      ],
+      "edge_names": [
+        "F2:top|F6:side:c3"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-29.999999999999996, 1.865174681370263e-14, 6.0]
+      ],
+      "distance": "1 mm",
+      "body": "Body1"
+    },
+    {
+      "id": 20,
+      "name": "Chamfer3",
+      "suppressed": false,
+      "param_names": [
+        "d30"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.50000000000001, -41.50000000000001, -1.820765760385257e-12],
+          "max": [41.5, 41.5, 101.00000000000038]
+        }
+      ],
+      "edge_names": [
+        "F17:side:c27|F3:top#2"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-28.99999999999998, 2.1316282072803006e-14, 101.0]
+      ],
+      "distance": "1 mm",
+      "body": "Body1"
+    },
+    {
+      "id": 21,
+      "name": "Chamfer4",
+      "suppressed": false,
+      "param_names": [
+        "d31"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.50000000000001, -41.50000000000001, -1.820765760385257e-12],
+          "max": [41.5, 41.5, 101.00000000000038]
+        }
+      ],
+      "edge_names": [
+        "F17:bottom|F2:side:c3"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-27.499999999999993, -1.955665707287974e-14, 96.0]
+      ],
+      "distance": ".5",
+      "body": "Body1"
+    },
+    {
+      "id": 22,
+      "name": "Chamfer5",
+      "suppressed": false,
+      "param_names": [
+        "d32"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.50000000000001, -41.50000000000001, -1.820765760385257e-12],
+          "max": [41.5, 41.5, 101.00000000000038]
+        }
+      ],
+      "edge_names": [
+        "F17:bottom|F17:side:c27"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-28.999999999999982, 3.730349362740526e-14, 96.0]
+      ],
+      "distance": "0.25",
+      "body": "Body1"
+    },
+    {
+      "id": 23,
+      "name": "Chamfer6",
+      "suppressed": false,
+      "param_names": [
+        "d33"
+      ],
+      "edge_refs": [
+        {
+          "dir": [0.0, 0.0, 0.0],
+          "min": [-41.50000000000001, -41.50000000000001, -1.820765760385257e-12],
+          "max": [41.5, 41.5, 101.00000000000038]
+        }
+      ],
+      "edge_names": [
+        "F2:side:c3|F2:start"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [-27.5, -1.955665707287974e-14, 3.219867629096483e-30]
+      ],
+      "distance": "2.5",
+      "body": "Body1"
     }
   ],
-  "next_id": 13,
+  "next_id": 24,
   "reserved_body_names": [
     "Body1"
   ],
   "next_component_color_index": 0,
+  "appearances": {
+    "bodies": {
+      "Body1": {
+        "name": "Anodized Black",
+        "color": [42, 44, 48],
+        "opacity": 1.0
+      }
+    }
+  },
   "visibility": {
     "hidden_bodies": [],
     "hidden_occurrences": [],
     "hidden_origin": [],
-    "hidden_sketches": [1, 4, 5],
+    "hidden_sketches": [1, 4, 5, 15, 10, 7],
     "shown_sketches": []
   }
 }
